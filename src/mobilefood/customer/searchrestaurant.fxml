@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobilefood.customer.SearchRestaurantController">
+   <children>
+      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../BackArrow_purple-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="33.0" layoutY="180.0" prefHeight="285.0" prefWidth="161.0">
+         <children>
+            <Button fx:id="nameSearch" mnemonicParsing="false" onMouseClicked="#searchByName" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Name">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="scoreSearch" mnemonicParsing="false" onMouseClicked="#searchByScore" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Score">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="categorySearch" mnemonicParsing="false" onMouseClicked="#searchByCategory" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Category">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="priceSearch" mnemonicParsing="false" onMouseClicked="#searchByPrice" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Price">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="zipcodeSearch" mnemonicParsing="false" onMouseClicked="#searchByZipcode" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Zip Code">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="restaurantList" mnemonicParsing="false" onMouseClicked="#showCategorizedList" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="Categorized List">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="search1" editable="false" layoutX="211.0" layoutY="33.0" prefHeight="33.0" prefWidth="340.0" promptText="No category selected" style="-fx-background-radius: 30px;" />
+      <TextField fx:id="search2" layoutX="397.0" layoutY="33.0" prefHeight="33.0" style="-fx-background-radius: 50px;" visible="false" />
+      <ImageView fitHeight="166.0" fitWidth="161.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Premium_Vector___Cute_moslem_female_chef-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

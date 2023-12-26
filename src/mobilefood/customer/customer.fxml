@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobilefood.customer.CustomerController">
+   <children>
+      <Label fx:id="message" layoutX="275.0" layoutY="102.0" text="Username" textAlignment="CENTER" textFill="#e4ed7f">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="39.0" layoutY="416.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="35.0" prefWidth="76.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Logout">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <VBox layoutX="39.0" layoutY="61.0" prefHeight="287.0" prefWidth="185.0">
+         <children>
+            <Button fx:id="searchRestaurant" mnemonicParsing="false" onMouseClicked="#restaurantSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Search Restaurant">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="searchFood" mnemonicParsing="false" onMouseClicked="#foodSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Search Food Item">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="placeOrderButton" mnemonicParsing="false" onMouseClicked="#placingOrder" prefHeight="35.0" prefWidth="261.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Place Order">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="orderStatus" mnemonicParsing="false" onMouseClicked="#seeOrderStatus" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="See Order Status">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="seeChat" mnemonicParsing="false" onMouseClicked="#showChat" prefHeight="35.0" prefWidth="194.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="See Chats">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="275.0" layoutY="48.0" prefHeight="63.0" prefWidth="156.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="293.0" fitWidth="215.0" layoutX="362.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Download_cute_chef_boy_holding_a_hot_dog__fast_food_logo_illustration_concept_for_free-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Line endX="22.0" endY="396.3333435058594" layoutX="230.0" layoutY="55.0" startX="22.0" startY="-6.333332061767578" stroke="WHITE" />
+      <Label layoutX="343.0" layoutY="156.0" text="Craving something delicious?" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

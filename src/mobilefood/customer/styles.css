@@ -1,0 +1,3 @@
+.gradient-button {
+    -fx-background-color: linear-gradient(to right, #D1CF96, #BAB76B);
+}

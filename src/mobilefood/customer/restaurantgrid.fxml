@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="324.0" style="-fx-background-radius: 10px; -fx-background-color: #D9ADFA;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobilefood.customer.RestaurantGridController">
+   <children>
+      <AnchorPane layoutY="15.0" prefHeight="80.0" prefWidth="324.0" style="-fx-background-radius: 10px; -fx-background-color: #000000;">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="70.0" prefWidth="314.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;">
+               <children>
+                  <Label fx:id="name" layoutX="7.0" text="Label" textFill="#000001">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="25.0" text="Score: " textFill="#000001">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="score" layoutX="51.0" layoutY="25.0" text="Label" textFill="#000001">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="25.0" text="Price: " textFill="#000001">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price" layoutX="153.0" layoutY="25.0" text="Label" textFill="#000001">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="210.0" layoutY="25.0" text="ZipCode: " textFill="#000001">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="categories" layoutX="7.0" layoutY="46.0" text="categories" textFill="#000001">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="zipcode" layoutX="273.0" layoutY="25.0" text="56789" textFill="#000001">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

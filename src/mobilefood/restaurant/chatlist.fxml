@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobilefood.restaurant.ChatListController">
+   <children>
+      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../BackArrow_green-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="50.0" prefHeight="34.0" text="Chat List -" textFill="#5ad760">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="241.0" fitWidth="242.0" layoutX="-19.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Screenshot_2023-09-13_135924-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollPane1" layoutX="22.0" layoutY="92.0" prefHeight="223.0" prefWidth="160.0" />
+      <Line endX="6.0000152587890625" layoutX="194.0" layoutY="34.0" startX="6.0000152587890625" startY="421.2528076171875" stroke="WHITE" />
+   </children>
+</AnchorPane>

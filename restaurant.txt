@@ -1,0 +1,10 @@
+1,KFC,4.3,$$,98531,Chicken,Fast Food,Family Meals,abc
+2,IHOP,4.3,$$,77494,Breakfast and Brunch,Family Meals,Burgers,pqr
+3,Starbucks,4.9,$$,99218,Coffee and Tea,Breakfast and Brunch,Bakery,123
+4,McDonalds,4.7,$$,98346,Burgers,Fast Food,,456
+5,Chillox,4.3,$$,93517,Burgers,Family Meals,,broke
+6,BFC,4.6,$$,94671,Burgers,Chicken,,null
+7,Kudos,4.3,$$,78543,Dessert,,,bee
+8,La Bamba,4.5,$,56789,Kebab,,,5432
+9,Pizza Hut,4.4,$$,23456,Family Meals,,,234
+10,HoneyComb,4.2,$,34526,Dessert,Family Meals,,efg

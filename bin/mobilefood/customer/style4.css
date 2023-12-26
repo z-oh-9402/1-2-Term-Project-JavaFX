@@ -1,0 +1,4 @@
+.gradient-button {
+    -fx-background-color: linear-gradient(to right, #E6CACA, #C69191);
+    -fx-background-radius: 50px;
+}

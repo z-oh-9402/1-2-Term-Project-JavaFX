@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobilefood.restaurant.RegisterController">
+   <children>
+      <Label layoutX="65.0" layoutY="203.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="272.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userText" layoutX="179.0" layoutY="202.0" prefHeight="27.0" prefWidth="163.0" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordText" layoutX="179.0" layoutY="271.0" prefHeight="27.0" prefWidth="163.0" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <ButtonBar layoutX="84.0" layoutY="342.0" prefHeight="37.0" prefWidth="214.0">
+         <buttons>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #FCBACC; -fx-background-radius: 20px; -fx-border-color: #E75480; -fx-border-width: 3px; -fx-border-radius: 30px;" text="Reset">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="registerButton" minWidth="70.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="37.0" style="-fx-background-color: #FCBACC; -fx-background-radius: 20px; -fx-border-color: #E75480; -fx-border-width: 3px; -fx-border-radius: 30px;" text="Sign Up">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <Label fx:id="alertText" layoutX="72.0" layoutY="434.0" opacity="0.0" text="Mendatory Field Empty!!!" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="272.0" fitWidth="214.0" layoutX="372.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Chef_garota_segurando_uma_concha_de_sopa_-_desenho_do_chef___Vetor_Premium-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="131.0" layoutY="71.0" prefHeight="74.0" prefWidth="326.0" text="ChefClick" textAlignment="CENTER" textFill="#e4819f">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="65.0" layoutX="386.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../click-icon-selection-amp-cursors-icon-jbADqEM7-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../BackArrow_pink-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
